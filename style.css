@@ -1,0 +1,90 @@
+
+.grid-container{
+    border: 1px solid black;
+    height: 95vh;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 150px 150px 200px 150px;
+    grid-template-rows: 150px 100px 100px 100px ;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 2px;
+}
+.grid-container div{
+    border: 2px solid  white;
+    border-radius: 5px;
+}
+.items1{
+
+    grid-column: 1;
+    grid-column: 1 / span 2;
+    background-image:url(item\ 2.jpg);
+    background-size: cover;
+}
+.items2{
+    background-image: url(mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.items3{
+background-image: url(image3.jpg);
+background-size: cover;
+}
+.items4{
+    background-image: url(image4.jpg);
+    background-size: cover;
+    }
+
+.items5{
+    background-image: url(image5.jpg);
+    background-size: cover;
+    }
+
+.items6{
+    grid-column: 3;
+    grid-row: 2 / span 2;
+    background-image: url(image6.jpg);
+    background-size: cover;
+}
+.items7{
+    background-image: url(image7.jpg);
+    background-size: cover;
+    }
+
+.items8{
+    background-image: url(image8.jpg);
+    background-size: cover;
+    }
+
+.items9{
+    background-image: url(image9.jpg);
+    background-size: cover;
+    }
+
+.items10{
+    background-image: url(image10.jpg);
+    background-size: cover;
+    }
+
+.items11{
+    background-image: url(image12.jpg);
+    background-size: cover;
+    }
+.items12{
+  background-image: url(image13.jpg);
+ background-size: cover;
+}
+    
+.items13{
+   
+    background-image: url(image14.jpg);
+   background-size: cover;
+  }
+
+@media screen and (max-width: 640px) {
+    .grid-container{
+         grid-template-columns: 2fr 2fr 2fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr ;
+    }
+}
